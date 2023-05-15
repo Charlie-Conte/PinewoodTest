@@ -1,4 +1,4 @@
-﻿namespace Pinewood.DMSSample.Business
+﻿namespace Pinewood.DMSSample.Business.Models
 {
     public class PartInvoice
     {

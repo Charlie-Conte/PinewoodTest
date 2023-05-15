@@ -1,8 +1,9 @@
 ﻿using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
+using Pinewood.DMSSample.Business.Models;
 
-namespace Pinewood.DMSSample.Business
+namespace Pinewood.DMSSample.Business.DataAccess
 {
     public class CustomerRepositoryDB
     {
