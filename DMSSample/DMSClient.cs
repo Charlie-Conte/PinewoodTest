@@ -8,9 +8,9 @@ namespace Pinewood.DMSSample.Business
     {
         private PartInvoiceController __Controller;
 
-        public DMSClient(PartAvailabilityClient partAvailabilityService,
-            PartInvoiceRepositoryDB partInvoiceRepository,
-            CustomerRepositoryDB customerRepository)
+        public DMSClient(IPartAvailabilityClient partAvailabilityService,
+            IPartInvoiceRepositoryDB partInvoiceRepository,
+            ICustomerRepositoryDB customerRepository)
         {
             __Controller = new PartInvoiceController(partAvailabilityService,
                 partInvoiceRepository,

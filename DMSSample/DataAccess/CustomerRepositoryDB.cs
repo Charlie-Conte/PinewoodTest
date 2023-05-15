@@ -5,7 +5,7 @@ using Pinewood.DMSSample.Business.Models;
 
 namespace Pinewood.DMSSample.Business.DataAccess
 {
-    public class CustomerRepositoryDB
+    public class CustomerRepositoryDB : ICustomerRepositoryDB
     {
         public Customer? GetByName(string name)
         {

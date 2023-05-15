@@ -5,7 +5,7 @@ using Pinewood.DMSSample.Business.Models;
 
 namespace Pinewood.DMSSample.Business.DataAccess
 {
-    public class PartInvoiceRepositoryDB
+    public class PartInvoiceRepositoryDB : IPartInvoiceRepositoryDB
     {
         public void Add(PartInvoice invoice)
         {

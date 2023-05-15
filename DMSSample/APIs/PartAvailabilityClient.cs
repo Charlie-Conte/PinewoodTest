@@ -1,6 +1,6 @@
 ﻿namespace Pinewood.DMSSample.Business.APIs
 {
-    public class PartAvailabilityClient : IDisposable
+    public class PartAvailabilityClient : IPartAvailabilityClient 
     {
         private HttpClient _httpClient;
 

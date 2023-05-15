@@ -6,13 +6,13 @@ namespace Pinewood.DMSSample.Business.Controllers
 {
     public class PartInvoiceController
     {
-        private readonly PartAvailabilityClient _partAvailabilityService;
-        private readonly CustomerRepositoryDB _customerRepository;
-        private readonly PartInvoiceRepositoryDB _partInvoiceRepository;
+        private readonly IPartAvailabilityClient _partAvailabilityService;
+        private readonly ICustomerRepositoryDB _customerRepository;
+        private readonly IPartInvoiceRepositoryDB _partInvoiceRepository;
 
-        public PartInvoiceController(PartAvailabilityClient partAvailabilityService,
-            PartInvoiceRepositoryDB partInvoiceRepository,
-            CustomerRepositoryDB customerRepository)
+        public PartInvoiceController(IPartAvailabilityClient partAvailabilityService,
+            IPartInvoiceRepositoryDB partInvoiceRepository,
+            ICustomerRepositoryDB customerRepository)
         {
             _partAvailabilityService = partAvailabilityService;
             _partInvoiceRepository = partInvoiceRepository;
